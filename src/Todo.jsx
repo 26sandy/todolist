@@ -20,7 +20,7 @@ const Todo = ({items,handleCheck,handleDelete}) => {
                         onChange={() =>handleCheck(item.id)}
                         />
                   <label 
-                  //      style={(item.checked)?{textDecoration :'line-through'} : null }
+                 
                         onDoubleClick={() => handleCheck(item.id )}>{item.item}
                   </label>
                         
