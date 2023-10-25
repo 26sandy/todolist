@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 22px;
+  }
+  
+  body {
+    min-height: 100vh;
+    font-family: 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100%; 
+    max-width: 500px;
+    border: 2px solid grey;
+    border-radius: 5px ;
+    margin: auto;
+    background-image: url(todo1.avif);
+  }
+  
+  header {
+    width: 100%;
+    padding: 0 0.25em;
+    background-color: mediumblue;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+  }
+  h1{
+    color: mediumblue;
+  }
+  ul {
+    width: 100%;
+   padding: 0 0.25rem 0 0.25rem;
+    margin-top: 30px;
+   color: rgb(20, 20, 20);
+  
+   }
+   li{
+    border: 1px solid grey;
+    border-radius:10px ;
+    font-size: 0px;
+    background-color: azure;
+
+   }
+  
+   p{
+    margin-top:1.5rem ;
+    color:whitesmoke;
+    font-Size:30px;
+    
+   }
+  
+  
+  .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.3rem 0 0.3rem 0.3rem;
+    margin: 0.3rem 0;
+    background-color: whitesmoke;
+    
+    
+   
+  }
+  
+  .item:first-child {
+    margin: 0;
+  }
+  
+  .item input[type="checkbox"] {
+    text-align: center;
+    width: 30px;
+    min-width: 36px;
+    height: 2.5rem;
+    height: 48px;
+    min-height: 48px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    text-decoration: none;
+   
+   
+   
+  }
+  
+  .item input[type="checkbox"]:focus + label {
+    text-decoration: underline;
+   
+   
+   
+  }
+  
+  .item > label {
+    font-size: 0.75rem;
+    flex-grow: 1;
+  }
+  
+  
+.item svg {
+    width: 48px;
+    min-width: 48px;
+    height: 36px;
+    font-size: 1rem;
+    color: rgb(18, 74, 121);
+    cursor: pointer;
+  }
+  
+  .item svg:focus, 
+  .item svg:hover {
+    color: red;
+    outline: none;
+  }
+  
+  .additem {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.5rem 0 0;
+    padding:  0.5rem 0.25rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .additem label {
+    position: absolute;
+    left: -99999px;
+  }
+  
+  .additem input[type='text'] {
+    flex-grow: 1;
+    max-width:80%;
+    min-height: 48px;
+    font-size: 1rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+   margin-right: 0.25rem;
+   margin-left: 0.1rem;
+    outline: none;
+  }
+  
+  button {
+    height: 48px;
+    width: 60px;
+    border-radius: 0.25rem;
+    border: 1px solid grey;
+    font-size: 1rem;
+    outline: none;
+    background: blue;
+    color: whitesmoke;
+    cursor: pointer;
+  } 
+  
+   button:focus, 
+  button:hover {
+    background: rgb(94, 232, 79);
+    color: rgb(247, 250, 249);
+    outline: none;
+  }
+  
+  .searchForm {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.25rem 0 0;
+    padding: 0 0.5rem 0.25rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .searchForm label {
+    position: absolute;
+    left: -99999px;
+  }
+  
+  .searchForm input[type='text'] {
+    flex-grow: 1;
+    max-width: 100%;
+    min-height: 48px;
+    font-size: 1rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    outline: none;
+  }
