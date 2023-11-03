@@ -10,7 +10,7 @@ const Todo = ({items,handleCheck,handleDelete}) => {
   return (
     
         <main>
-           
+            {(items.length) ? (
             <ul>
             {items.map((item) => (
                   <li className='item'key ={item.id}> I
@@ -33,7 +33,8 @@ const Todo = ({items,handleCheck,handleDelete}) => {
         ))}
         </ul>
 
-            
+            ):(<p>Add Task</p>)
+             }
         
         </main>
   )

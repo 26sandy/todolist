@@ -3,14 +3,18 @@
 import Todo from './Todo';
 import Header from './Header';
 import "./App.css"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AddItem from './AddItem';
 
 function App() {
-  const [items, setItems] = useState(JSON.parse(localStorage.getItem("todo-list")),[]);
+  const [items, setItems] = useState([]);
 
     const[newItem,setNewItem] = useState('')
     
+
+    useEffect(()=>{
+      JSON.parse(localStorage.getItem("todo-list"))
+    },[])
     const addItem =(item) =>{
 
       const id = items.length ? items[items.length-1].id + 1 :1;
